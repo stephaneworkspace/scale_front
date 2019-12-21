@@ -1,0 +1,1 @@
+/Users/stephanebressani/Code/Flutter/scale/rust/scale/target/debug/examples/test_scale: /Users/stephanebressani/Code/Flutter/scale/rust/scale/examples/test_scale.rs /Users/stephanebressani/Code/Flutter/scale/rust/scale/src/lib.rs
