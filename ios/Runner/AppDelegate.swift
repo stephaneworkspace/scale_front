@@ -14,6 +14,7 @@ import Flutter
     CHANNEL.setMethodCallHandler { /*[unowned self]*/ (methodCall, result) in
         if methodCall.method == "Printy" {
             result("Hi from Swift")
+            hello_world()
         }
     }
     // En call swift
