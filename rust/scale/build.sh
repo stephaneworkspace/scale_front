@@ -1,4 +1,12 @@
 #!/bin/sh
+
+# Build and create header
+cargo build
+
+# Display ferry
+cargo run --example test_scale
+
+# Group binary with lipo
 cargo build --target aarch64-apple-ios
 cargo build --target x86_64-apple-ios
 # Print NonFat -> Ok
