@@ -47,7 +47,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   static const platform =
       const MethodChannel("stephaneworkspace.scale/rust-services");
-  int _counter = 0;
+  // int _counter = 0;
+  String _text = "";
 
   /*void _incrementCounter() {
     setState(() {
@@ -68,6 +69,9 @@ class _MyHomePageState extends State<MyHomePage> {
       print(e);
     }
     print(value);
+    setState(() {
+      _text = value;
+    });
   }
 
   @override
@@ -108,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             Text(
-              '$_counter',
+              '$_text',
               style: Theme.of(context).textTheme.display1,
             ),
           ],
